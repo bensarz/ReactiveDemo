@@ -1,2 +1,2 @@
-github "ReactiveCocoa/ReactiveCocoa"
-github "ReactiveX/RxSwift"
+github "ReactiveCocoa/ReactiveSwift"
+github "ReactiveX/RxSwift" "3.0.0-rc.1"

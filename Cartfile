@@ -1,2 +1,4 @@
-github "ReactiveCocoa/ReactiveSwift"
+github "Alamofire/Alamofire"
 github "ReactiveX/RxSwift" "3.0.0-rc.1"
+github "antitypical/Result"
+github "soffes/Crypto"

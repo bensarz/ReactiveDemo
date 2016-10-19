@@ -7,23 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		981F41751DB590F600FEA598 /* CharactersNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 981F41741DB590F600FEA598 /* CharactersNetworkService.swift */; };
+		981F41781DB5925800FEA598 /* CommonCrypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 981F41761DB5925800FEA598 /* CommonCrypto.framework */; };
+		981F41791DB5925800FEA598 /* Crypto.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 981F41771DB5925800FEA598 /* Crypto.framework */; };
+		981F417B1DB5934000FEA598 /* Alamofire.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 981F417A1DB5934000FEA598 /* Alamofire.framework */; };
 		9827526E1DB3D8D90048509C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9827526D1DB3D8D90048509C /* AppDelegate.swift */; };
-		982752701DB3D8D90048509C /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9827526F1DB3D8D90048509C /* ViewController.swift */; };
+		982752701DB3D8D90048509C /* CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9827526F1DB3D8D90048509C /* CharactersViewController.swift */; };
 		982752731DB3D8D90048509C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 982752711DB3D8D90048509C /* Main.storyboard */; };
 		982752751DB3D8D90048509C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 982752741DB3D8D90048509C /* Assets.xcassets */; };
 		982752781DB3D8D90048509C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 982752761DB3D8D90048509C /* LaunchScreen.storyboard */; };
-		984523361DB583E8007143DA /* ReactiveSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 984523341DB580C0007143DA /* ReactiveSwift.framework */; };
 		984523371DB583EB007143DA /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 982752861DB3E0380048509C /* Result.framework */; };
 		984523381DB58451007143DA /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 982752871DB3E0380048509C /* RxBlocking.framework */; };
 		984523391DB58451007143DA /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 982752881DB3E0380048509C /* RxCocoa.framework */; };
 		9845233A1DB58451007143DA /* RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 982752891DB3E0380048509C /* RxSwift.framework */; };
-		9845233C1DB58451007143DA /* RxTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9845233B1DB58451007143DA /* RxTest.framework */; };
+		986491801DB71DCF00086CDC /* CharacterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9864917F1DB71DCF00086CDC /* CharacterTableViewCell.swift */; };
+		987BCAD51DB713CF0052B78D /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987BCAD41DB713CF0052B78D /* Character.swift */; };
+		987BCAD71DB714AE0052B78D /* MarvelNetworking.swift in Sources */ = {isa = PBXBuildFile; fileRef = 987BCAD61DB714AE0052B78D /* MarvelNetworking.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		981F41741DB590F600FEA598 /* CharactersNetworkService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersNetworkService.swift; sourceTree = "<group>"; };
+		981F41761DB5925800FEA598 /* CommonCrypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CommonCrypto.framework; path = Carthage/Build/iOS/CommonCrypto.framework; sourceTree = "<group>"; };
+		981F41771DB5925800FEA598 /* Crypto.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Crypto.framework; path = Carthage/Build/iOS/Crypto.framework; sourceTree = "<group>"; };
+		981F417A1DB5934000FEA598 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = Carthage/Build/iOS/Alamofire.framework; sourceTree = "<group>"; };
 		9827526A1DB3D8D90048509C /* ReactiveDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ReactiveDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9827526D1DB3D8D90048509C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		9827526F1DB3D8D90048509C /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9827526F1DB3D8D90048509C /* CharactersViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersViewController.swift; sourceTree = "<group>"; };
 		982752721DB3D8D90048509C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		982752741DB3D8D90048509C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		982752771DB3D8D90048509C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -36,6 +45,9 @@
 		9827528A1DB3E0380048509C /* RxTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTests.framework; path = Carthage/Build/iOS/RxTests.framework; sourceTree = "<group>"; };
 		984523341DB580C0007143DA /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
 		9845233B1DB58451007143DA /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
+		9864917F1DB71DCF00086CDC /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
+		987BCAD41DB713CF0052B78D /* Character.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
+		987BCAD61DB714AE0052B78D /* MarvelNetworking.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MarvelNetworking.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,18 +55,28 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				984523361DB583E8007143DA /* ReactiveSwift.framework in Frameworks */,
+				981F417B1DB5934000FEA598 /* Alamofire.framework in Frameworks */,
+				981F41781DB5925800FEA598 /* CommonCrypto.framework in Frameworks */,
+				981F41791DB5925800FEA598 /* Crypto.framework in Frameworks */,
 				984523371DB583EB007143DA /* Result.framework in Frameworks */,
 				984523381DB58451007143DA /* RxBlocking.framework in Frameworks */,
 				984523391DB58451007143DA /* RxCocoa.framework in Frameworks */,
 				9845233A1DB58451007143DA /* RxSwift.framework in Frameworks */,
-				9845233C1DB58451007143DA /* RxTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		981F41731DB58F3800FEA598 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				987BCAD61DB714AE0052B78D /* MarvelNetworking.swift */,
+				9864917D1DB71D8600086CDC /* Services */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
 		982752611DB3D8D90048509C = {
 			isa = PBXGroup;
 			children = (
@@ -85,7 +107,7 @@
 		9827527F1DB3D8F60048509C /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				9827526F1DB3D8D90048509C /* ViewController.swift */,
+				9864917E1DB71DBD00086CDC /* Characters */,
 			);
 			name = "View Controllers";
 			sourceTree = "<group>";
@@ -112,6 +134,8 @@
 			isa = PBXGroup;
 			children = (
 				9827526D1DB3D8D90048509C /* AppDelegate.swift */,
+				987BCAD31DB713820052B78D /* Model */,
+				981F41731DB58F3800FEA598 /* Networking */,
 				9827527F1DB3D8F60048509C /* View Controllers */,
 			);
 			name = Source;
@@ -120,6 +144,9 @@
 		982752841DB3E0380048509C /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				981F417A1DB5934000FEA598 /* Alamofire.framework */,
+				981F41761DB5925800FEA598 /* CommonCrypto.framework */,
+				981F41771DB5925800FEA598 /* Crypto.framework */,
 				9845233B1DB58451007143DA /* RxTest.framework */,
 				984523341DB580C0007143DA /* ReactiveSwift.framework */,
 				982752851DB3E0380048509C /* ReactiveCocoa.framework */,
@@ -130,6 +157,31 @@
 				9827528A1DB3E0380048509C /* RxTests.framework */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		9864917D1DB71D8600086CDC /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				981F41741DB590F600FEA598 /* CharactersNetworkService.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		9864917E1DB71DBD00086CDC /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				9827526F1DB3D8D90048509C /* CharactersViewController.swift */,
+				9864917F1DB71DCF00086CDC /* CharacterTableViewCell.swift */,
+			);
+			name = Characters;
+			sourceTree = "<group>";
+		};
+		987BCAD31DB713820052B78D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				987BCAD41DB713CF0052B78D /* Character.swift */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,12 +260,13 @@
 			files = (
 			);
 			inputPaths = (
-				"$(SRCROOT)/Carthage/Build/iOS/ReactiveSwift.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/Result.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxBlocking.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxCocoa.framework",
 				"$(SRCROOT)/Carthage/Build/iOS/RxSwift.framework",
-				"$(SRCROOT)/Carthage/Build/iOS/RxTest.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/CommonCrypto.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Crypto.framework",
+				"$(SRCROOT)/Carthage/Build/iOS/Alamofire.framework",
 			);
 			name = Carthage;
 			outputPaths = (
@@ -229,8 +282,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				982752701DB3D8D90048509C /* ViewController.swift in Sources */,
+				987BCAD51DB713CF0052B78D /* Character.swift in Sources */,
+				982752701DB3D8D90048509C /* CharactersViewController.swift in Sources */,
+				981F41751DB590F600FEA598 /* CharactersNetworkService.swift in Sources */,
 				9827526E1DB3D8D90048509C /* AppDelegate.swift in Sources */,
+				987BCAD71DB714AE0052B78D /* MarvelNetworking.swift in Sources */,
+				986491801DB71DCF00086CDC /* CharacterTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

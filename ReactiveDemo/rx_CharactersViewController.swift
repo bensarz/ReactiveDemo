@@ -1,6 +1,7 @@
 import RxCocoa
 import RxSwift
 import UIKit
+import enum Result.Result
 
 class rx_CharactersViewController: UIViewController {
     
@@ -20,21 +21,16 @@ class rx_CharactersViewController: UIViewController {
         
         rx_setup()
         
-        let observable = rx_CharactersNetworkService().rx_fetchCharacters()
-        _ = observable.subscribe(onNext: { (result) in
+        let onNext: (Result<[Character], rx_CharactersNetworkService.ParseCharacterError>) -> Void = { (result) in
             switch result {
             case .failure(let error):
                 print(error)
             case .success(let characters):
                 self.characters.value = characters
             }
-            },
-                                 onError: { (error) in
-                                    print(error)
-            },
-                                 onCompleted: {
-                                    print("completed")
-        })
+        }
+        let observable = rx_CharactersNetworkService().rx_fetchCharacters()
+        _ = observable.subscribe(onNext: onNext)
         
         
     }

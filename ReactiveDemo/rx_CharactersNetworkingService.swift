@@ -72,12 +72,11 @@ struct rx_CharactersNetworkService {
             }
             .do(onNext: { (result) in
                 switch result {
-                case .failure(let error):
-                    print(error)
+                case .failure(_):
                     throw ParseCharacterError.unknown
                 case .success(_):
-                    print("success")
-                    // save to database
+                    // FIXME: [BS] Oct 24, 2016 | Save to database
+                    break
                 }
             })
     }

@@ -16,6 +16,8 @@
 		982752731DB3D8D90048509C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 982752711DB3D8D90048509C /* Main.storyboard */; };
 		982752751DB3D8D90048509C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 982752741DB3D8D90048509C /* Assets.xcassets */; };
 		982752781DB3D8D90048509C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 982752761DB3D8D90048509C /* LaunchScreen.storyboard */; };
+		9843F67F1DBE617B00B34A42 /* rx_CharactersNetworkingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9843F67E1DBE617B00B34A42 /* rx_CharactersNetworkingService.swift */; };
+		9843F6821DBE664100B34A42 /* rx_CharactersViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9843F6811DBE664100B34A42 /* rx_CharactersViewController.swift */; };
 		984523371DB583EB007143DA /* Result.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 982752861DB3E0380048509C /* Result.framework */; };
 		984523381DB58451007143DA /* RxBlocking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 982752871DB3E0380048509C /* RxBlocking.framework */; };
 		984523391DB58451007143DA /* RxCocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 982752881DB3E0380048509C /* RxCocoa.framework */; };
@@ -43,6 +45,8 @@
 		982752881DB3E0380048509C /* RxCocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxCocoa.framework; path = Carthage/Build/iOS/RxCocoa.framework; sourceTree = "<group>"; };
 		982752891DB3E0380048509C /* RxSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxSwift.framework; path = Carthage/Build/iOS/RxSwift.framework; sourceTree = "<group>"; };
 		9827528A1DB3E0380048509C /* RxTests.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTests.framework; path = Carthage/Build/iOS/RxTests.framework; sourceTree = "<group>"; };
+		9843F67E1DBE617B00B34A42 /* rx_CharactersNetworkingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rx_CharactersNetworkingService.swift; sourceTree = "<group>"; };
+		9843F6811DBE664100B34A42 /* rx_CharactersViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = rx_CharactersViewController.swift; sourceTree = "<group>"; };
 		984523341DB580C0007143DA /* ReactiveSwift.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = ReactiveSwift.framework; path = Carthage/Build/iOS/ReactiveSwift.framework; sourceTree = "<group>"; };
 		9845233B1DB58451007143DA /* RxTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = RxTest.framework; path = Carthage/Build/iOS/RxTest.framework; sourceTree = "<group>"; };
 		9864917F1DB71DCF00086CDC /* CharacterTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharacterTableViewCell.swift; sourceTree = "<group>"; };
@@ -72,7 +76,7 @@
 			isa = PBXGroup;
 			children = (
 				987BCAD61DB714AE0052B78D /* MarvelNetworking.swift */,
-				9864917D1DB71D8600086CDC /* Services */,
+				9843F6801DBE618600B34A42 /* Services */,
 			);
 			name = Networking;
 			sourceTree = "<group>";
@@ -159,10 +163,11 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		9864917D1DB71D8600086CDC /* Services */ = {
+		9843F6801DBE618600B34A42 /* Services */ = {
 			isa = PBXGroup;
 			children = (
 				981F41741DB590F600FEA598 /* CharactersNetworkService.swift */,
+				9843F67E1DBE617B00B34A42 /* rx_CharactersNetworkingService.swift */,
 			);
 			name = Services;
 			sourceTree = "<group>";
@@ -172,6 +177,7 @@
 			children = (
 				9827526F1DB3D8D90048509C /* CharactersViewController.swift */,
 				9864917F1DB71DCF00086CDC /* CharacterTableViewCell.swift */,
+				9843F6811DBE664100B34A42 /* rx_CharactersViewController.swift */,
 			);
 			name = Characters;
 			sourceTree = "<group>";
@@ -286,8 +292,10 @@
 				982752701DB3D8D90048509C /* CharactersViewController.swift in Sources */,
 				981F41751DB590F600FEA598 /* CharactersNetworkService.swift in Sources */,
 				9827526E1DB3D8D90048509C /* AppDelegate.swift in Sources */,
+				9843F6821DBE664100B34A42 /* rx_CharactersViewController.swift in Sources */,
 				987BCAD71DB714AE0052B78D /* MarvelNetworking.swift in Sources */,
 				986491801DB71DCF00086CDC /* CharacterTableViewCell.swift in Sources */,
+				9843F67F1DBE617B00B34A42 /* rx_CharactersNetworkingService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

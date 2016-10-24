@@ -1,11 +1,3 @@
-//
-//  CharactersViewController.swift
-//  ReactiveDemo
-//
-//  Created by Benoit Sarrazin on 2016-10-16.
-//  Copyright © 2016 Berzerker IO. All rights reserved.
-//
-
 import RxSwift
 import UIKit
 
@@ -24,16 +16,18 @@ class CharactersViewController: UIViewController, UITableViewDataSource, UITable
     override func viewDidLoad() {
         super.viewDidLoad()
         let observable = CharactersNetworkService().rx_fetchCharacters()
-        _ = observable.subscribe(onNext: { (result) in
+        _ = observable.subscribe(onNext: { [weak self] (result) in
             switch result {
             case .failure(let error):
                 print(error)
             case .success(let characters):
-                self.characters = characters
+                self?.characters = characters
                 DispatchQueue.main.async {
-                    self.tableView.reloadData()
+                    self?.tableView.reloadData()
                 }
             }
+            }, onError: { [weak self] (error) in
+                print("\(#function) -> \(type(of: error)) \(error)")
         })
     }
     

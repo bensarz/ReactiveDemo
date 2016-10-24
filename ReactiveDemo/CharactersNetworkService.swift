@@ -1,11 +1,3 @@
-//
-//  CharactersNetworkService.swift
-//  ReactiveDemo
-//
-//  Created by Benoit Sarrazin on 2016-10-17.
-//  Copyright © 2016 Berzerker IO. All rights reserved.
-//
-
 import Alamofire
 import Crypto
 import Foundation
@@ -80,7 +72,15 @@ struct CharactersNetworkService {
             default:
                 return .failure(.unknown)
             }
-        }
+        }.do(onNext: { (result) in
+            switch result {
+            case .failure(let error):
+                print(error)
+            case .success(let characters):
+                throw ParseCharacterError.unknown
+                // save to database
+            }
+        })
     }
     
 }

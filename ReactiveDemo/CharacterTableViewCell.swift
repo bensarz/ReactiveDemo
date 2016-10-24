@@ -1,11 +1,3 @@
-//
-//  CharacterTableViewCell.swift
-//  ReactiveDemo
-//
-//  Created by Benoit Sarrazin on 2016-10-18.
-//  Copyright © 2016 Berzerker IO. All rights reserved.
-//
-
 import UIKit
 
 class CharacterTableViewCell: UITableViewCell {
